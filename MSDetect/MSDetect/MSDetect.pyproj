@@ -5,8 +5,7 @@
     <ProjectGuid>1c77643e-b0ec-4dd5-a931-6cce610fac5e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>MSDetect.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <SearchPath>Drone</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>MSDetect</Name>
@@ -23,13 +22,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="KeyBoard.py" />
-    <Compile Include="MSControl.py" />
+    <Compile Include="Drone\KeyBoard.py" />
+    <Compile Include="Drone\MSControl.py" />
+    <Compile Include="Drone\MSDrone.py" />
     <Compile Include="MSDetect.py" />
-    <Compile Include="MSDrone.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="CondaEnv|CondaEnv|tf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Drone\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
